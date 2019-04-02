@@ -39,9 +39,19 @@ function getMovieData (event) {
       document.getElementById("average3").textContent = result3.vote_average;
 
 })
+
   .catch(function(error) {
     console.log(error);
   })
 }
 // Adding a callback to have a click
 document.getElementById("button").addEventListener("click", getMovieData);
+
+// fetch("https://api.giphy.com/v1/gifs/search?api_key=tMALhz0175MYMgJzQIr0gFPUDLpxM0P5&q=" + searchValue + "&limit=25&offset=0&rating=G&lang=en")
+// .then (function(response) {
+//   return response.json();
+// })
+//
+// .then(function(data) {
+//
+// })
