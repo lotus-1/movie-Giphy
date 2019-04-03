@@ -1,12 +1,10 @@
 
 body {
   background: url("http://www.greenxf.com/phoneico/2019-1/2019141656643506.jpg") no-repeat center center fixed;
-<<<<<<< HEAD
   background-size: cover;
-=======
-    background-size: cover;
-    text-align: center;
->>>>>>> master
+  background-size: cover;
+  text-align: center;
+
 }
 
 
