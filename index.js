@@ -14,7 +14,7 @@ function getMovieData (event) {
       return response.json();
     })
 
-    .then(function(data) {
+    .then(function (data) {
       var result1 = data.results[0];
 
       document.getElementById("title1").textContent = result1.title;
@@ -48,10 +48,18 @@ fetch("https://api.giphy.com/v1/gifs/search?api_key=tMALhz0175MYMgJzQIr0gFPUDLpx
 })
 
 .then(function(data) {
+  var gifsArr = [data.data[0], data.data[1], data.data[2]];
+  gifsArr.forEach(function (el , i){
+    console.log("i = ",i);
+     document.getElementById("giphy" + (i+1)).src = el.images.original.url;
+     if (i > 2){
 
-  document.getElementById("giphy1").src = data.data[0].images.original.url;
-  document.getElementById("giphy2").src = data.data[1].images.original.url;
-  document.getElementById("giphy3").src = data.data[2].images.original.url;
+     }
+  })
+
+  //  document.getElementById("giphy1").src = data.data[0].images.original.url;
+  // document.getElementById("giphy2").src = data.data[1].images.original.url;
+  // document.getElementById("giphy3").src = data.data[2].images.original.url;
 
 })
 }
