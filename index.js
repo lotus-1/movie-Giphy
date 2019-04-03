@@ -28,7 +28,7 @@ function getMovieData (event) {
       infoArr.forEach(function forEachImge (el , i){
         document.getElementById("image" + (i+1)).src = imgUrl + el.poster_path;
       })
-      
+
       //
       // data.results.forEach(function forEachDate (el , i){
       // })
@@ -74,10 +74,18 @@ fetch("https://api.giphy.com/v1/gifs/search?api_key=tMALhz0175MYMgJzQIr0gFPUDLpx
 })
 
 .then(function(data) {
+  var gifsArr = [data.data[0], data.data[1], data.data[2]];
+  gifsArr.forEach(function (el , i){
+    console.log("i = ",i);
+     document.getElementById("giphy" + (i+1)).src = el.images.original.url;
+     if (i > 2){
 
-  document.getElementById("giphy1").src = data.data[0].images.original.url;
-  document.getElementById("giphy2").src = data.data[1].images.original.url;
-  document.getElementById("giphy3").src = data.data[2].images.original.url;
+     }
+  })
+
+  //  document.getElementById("giphy1").src = data.data[0].images.original.url;
+  // document.getElementById("giphy2").src = data.data[1].images.original.url;
+  // document.getElementById("giphy3").src = data.data[2].images.original.url;
 
 })
 }
