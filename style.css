@@ -1,12 +1,10 @@
-
 body {
-  background: url("http://www.greenxf.com/phoneico/2019-1/2019141656643506.jpg") no-repeat center center fixed;
+  background: url("http://www.greenxf.com/phoneico/2019-1/2019141656643506.jpg")
+    no-repeat center center fixed;
   background-size: cover;
   background-size: cover;
   text-align: center;
-
 }
-
 
 h1 {
   background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
@@ -21,14 +19,14 @@ h1 {
   text-align: center;
 }
 
-h3 {
+p {
   font-size: 50px;
   padding: 80px 50px;
   text-shadow: 2px 2px #1aff1a;
   text-align: center;
 }
 
-input[type=text] {
+input[type="text"] {
   width: 550px;
   box-sizing: border-box;
   border: 2px solid #ccc;
@@ -39,7 +37,6 @@ input[type=text] {
   background-position: 10px 10px;
   background-repeat: no-repeat;
   padding: 20px 50px 20px 50px;
-
 }
 
 #button {
@@ -87,19 +84,5 @@ form {
 .Copyrights {
   text-align: center;
   font-size: 22px;
-  font-family: 'Indie Flower', cursive;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-
-}
-
-.flex-container result{
-  width: 100px;
-  margin: 10px;
-  text-align: center;
-  line-height: 75px;
-  font-size: 30px;
+  font-family: "Indie Flower", cursive;
 }
