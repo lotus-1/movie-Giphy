@@ -48,16 +48,16 @@ fetch("https://api.giphy.com/v1/gifs/search?api_key=tMALhz0175MYMgJzQIr0gFPUDLpx
 })
 
 .then(function(data) {
-  
+
   document.getElementById("giphy1").src = data.data[0].images.original.url;
   document.getElementById("giphy2").src = data.data[1].images.original.url;
   document.getElementById("giphy3").src = data.data[2].images.original.url;
 
 })
+}
 
 
 
   // document.getElementById("jiphy1").src = data.original_still;
 document.getElementById("button").addEventListener("click", getMovieData);
-})
 // Adding a callback to have a click
