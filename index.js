@@ -1,4 +1,5 @@
 
+
 // We create a var to hold the constant url .
 var imgUrl = "https://image.tmdb.org/t/p/w185_and_h278_bestv2/";
 
@@ -40,6 +41,7 @@ function getMovieData (event) {
 
 })
 
+
 fetch("https://api.giphy.com/v1/gifs/search?api_key=tMALhz0175MYMgJzQIr0gFPUDLpxM0P5&q=" + searchValue + "&limit=25&offset=0&rating=G&lang=en")
 .then (function(response) {
   return response.json();
@@ -54,9 +56,8 @@ fetch("https://api.giphy.com/v1/gifs/search?api_key=tMALhz0175MYMgJzQIr0gFPUDLpx
 })
 
 
-  .catch(function(error) {
-    console.log(error);
-  })
-}
-// Adding a callback to have a click
+
+  // document.getElementById("jiphy1").src = data.original_still;
 document.getElementById("button").addEventListener("click", getMovieData);
+})
+// Adding a callback to have a click
