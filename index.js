@@ -40,16 +40,6 @@ function getMovieData (event) {
 
 })
 
-fetch("https://api.giphy.com/v1/gifs/search?api_key=tMALhz0175MYMgJzQIr0gFPUDLpxM0P5&q=" + searchValue + "&limit=25&offset=0&rating=G&lang=en")
-  .then (function(response) {
-    return response.json();
-  })
-
-  .then(function(data) {
-   document.getElementById("giphy1").src = data[1].original_still;
-
-  })
-
   .catch(function(error) {
     console.log(error);
   })
