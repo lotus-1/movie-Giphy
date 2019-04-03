@@ -42,6 +42,20 @@ function getMovieData (event) {
 })
 
 
+fetch("https://api.giphy.com/v1/gifs/search?api_key=tMALhz0175MYMgJzQIr0gFPUDLpxM0P5&q=" + searchValue + "&limit=25&offset=0&rating=G&lang=en")
+.then (function(response) {
+  return response.json();
+})
+
+.then(function(data) {
+  
+  document.getElementById("giphy1").src = data.data[0].images.original.url;
+  document.getElementById("giphy2").src = data.data[1].images.original.url;
+  document.getElementById("giphy3").src = data.data[2].images.original.url;
+
+})
+
+
 
   // document.getElementById("jiphy1").src = data.original_still;
 document.getElementById("button").addEventListener("click", getMovieData);
