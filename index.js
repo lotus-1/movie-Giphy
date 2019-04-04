@@ -30,11 +30,13 @@ function getMovieData(event) {
         document.getElementById("average" + (i + 1)).textContent =
           el.vote_average;
       });
+      .then(function(data) {
+        infoArr.forEach(function forEachImge(el, i) {
+          document.getElementById("image" + (i + 1)).src =
+            imgUrl + el.poster_path;
+        });
+      })
 
-      infoArr.forEach(function forEachImge(el, i) {
-        document.getElementById("image" + (i + 1)).src =
-          imgUrl + el.poster_path;
-      });
     });
 
   fetch(
@@ -49,7 +51,7 @@ function getMovieData(event) {
     .then(function(data) {
       var gifsArr = [data.data[0], data.data[1], data.data[2]];
       gifsArr.forEach(function(el, i) {
-        console.log("i = ", i);
+        // console.log("i = ", i);
         document.getElementById("giphy" + (i + 1)).src = el.images.original.url;
       });
     });
