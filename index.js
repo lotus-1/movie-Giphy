@@ -18,8 +18,13 @@ function getMovieData(event) {
 
     .then(function(data) {
       var infoArr = [data.results[0], data.results[1], data.results[2]];
+
+      infoArr.forEach(function forEachTitle(el, i) {
+        document.getElementById("title" + (i + 1)).textContent = el.title;
+
       infoArr.forEach(function forEachTitle(el, i = 1) {
         document.getElementById("title" + (i)).textContent = el.title;
+
         document.getElementById("date" + (i + 1)).textContent = el.release_date;
         document.getElementById("summary" + (i + 1)).textContent = el.overview;
         document.getElementById("average" + (i + 1)).textContent =

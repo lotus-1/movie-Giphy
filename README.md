@@ -7,17 +7,19 @@ By our team :
 
 
 <br>
-Enter [here](https://lotus-1.github.io/movie-Giphy-/) to see our super page
-<br>
+Enter (https://lotus-1.github.io/movie-Giphy-/) to see our super page
+<br><br>
 
+**Description to describe the website**
 We built our application to let the user search for their favourite movies and TV-shows. The user can get information about the movie, like the release date, movie summary and rate. :cinema:
+<br>
+this page has 2 results to the button . when you search about a movie you got the move poster and information and also a anmation giphy from the movie.
 
 <br>
 We used API, JAVASCRIPT, CSS, HTML5, DOM technologies to build our app<br>
 
-<br>
-this page has 2 results to the button . when you search about a movie you got the move poster and information and also a anmation giphy from the movie
-<br>
+
+<br> ***Challenges***
 Some of the challenges we encountered are, finding the API key, finding the image URL, working on a project that somwone else did, and updating it.
 
 <br>
